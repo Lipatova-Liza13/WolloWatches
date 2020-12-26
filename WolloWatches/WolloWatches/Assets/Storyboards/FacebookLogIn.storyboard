@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MainFont.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Facebook Log In View Controller-->
+        <scene sceneID="8Tk-15-jph">
+            <objects>
+                <viewController id="1e8-qM-lxo" customClass="FacebookLogInViewController" customModule="WolloWatches" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hmp-Cx-PLc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WolloWatchesIcons" translatesAutoresizingMaskIntoConstraints="NO" id="cbS-bh-dub">
+                                <rect key="frame" x="118" y="313" width="178" height="113"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jo-Q1-hsH">
+                                <rect key="frame" x="91" y="476" width="232" height="41"/>
+                                <color key="backgroundColor" name="Accent"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="Continue with Facebook">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifa-bB-NSR">
+                                <rect key="frame" x="82" y="816" width="163.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" name="Font"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbl-HG-UMs">
+                                <rect key="frame" x="249.5" y="816" width="51.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Log in.">
+                                    <color key="titleColor" name="Accent"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b33-wl-ndy">
+                                <rect key="frame" x="142" y="581" width="130" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anf-zK-l3Y">
+                                        <rect key="frame" x="50" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3cS-t4-DkM"/>
+                                            <constraint firstAttribute="width" constant="30" id="oel-vf-MTZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Pinterest"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivm-cU-Yno">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="4xs-B6-9hu"/>
+                                            <constraint firstAttribute="height" constant="30" id="r15-qf-I1y"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="GooglePlus"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8H-eZ-DHo">
+                                        <rect key="frame" x="100" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="J2Z-33-Tr3"/>
+                                            <constraint firstAttribute="height" constant="30" id="ujD-ht-XhE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Twitter"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ivm-cU-Yno" secondAttribute="bottom" id="4FI-WQ-MsN"/>
+                                    <constraint firstItem="Ivm-cU-Yno" firstAttribute="leading" secondItem="b33-wl-ndy" secondAttribute="leading" id="6PS-2t-ZRU"/>
+                                    <constraint firstAttribute="height" constant="30" id="9M4-FG-h6I"/>
+                                    <constraint firstItem="Ivm-cU-Yno" firstAttribute="top" secondItem="b33-wl-ndy" secondAttribute="top" id="BHb-P4-cTK"/>
+                                    <constraint firstAttribute="bottom" secondItem="I8H-eZ-DHo" secondAttribute="bottom" id="Dh5-UH-xfn"/>
+                                    <constraint firstAttribute="trailing" secondItem="I8H-eZ-DHo" secondAttribute="trailing" id="Ili-Bw-jz9"/>
+                                    <constraint firstAttribute="width" constant="130" id="NVe-jh-Huu"/>
+                                    <constraint firstItem="anf-zK-l3Y" firstAttribute="leading" secondItem="Ivm-cU-Yno" secondAttribute="trailing" constant="20" id="U0x-Ho-ZS4"/>
+                                    <constraint firstItem="I8H-eZ-DHo" firstAttribute="top" secondItem="b33-wl-ndy" secondAttribute="top" id="j5i-qL-zQa"/>
+                                    <constraint firstItem="anf-zK-l3Y" firstAttribute="top" secondItem="b33-wl-ndy" secondAttribute="top" id="nSV-Rl-j9T"/>
+                                    <constraint firstAttribute="bottom" secondItem="anf-zK-l3Y" secondAttribute="bottom" id="nhY-ku-hNQ"/>
+                                    <constraint firstItem="I8H-eZ-DHo" firstAttribute="leading" secondItem="anf-zK-l3Y" secondAttribute="trailing" constant="20" id="zgC-50-DBB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I`ll use mobile phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryB-eA-oVa">
+                                <rect key="frame" x="130" y="532" width="154" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" name="Font"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h5B-zD-htm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b33-wl-ndy" firstAttribute="leading" secondItem="h5B-zD-htm" secondAttribute="leading" constant="142" id="806-aY-NmI"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="trailing" secondItem="cbS-bh-dub" secondAttribute="trailing" constant="118" id="J1O-Uq-xMo"/>
+                            <constraint firstItem="b33-wl-ndy" firstAttribute="top" secondItem="9Jo-Q1-hsH" secondAttribute="bottom" constant="64" id="KOD-8A-HWz"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="bottom" secondItem="cbS-bh-dub" secondAttribute="bottom" constant="436" id="ORI-kb-pdt"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="bottom" secondItem="Ifa-bB-NSR" secondAttribute="bottom" constant="30" id="OzL-qw-dkl"/>
+                            <constraint firstItem="Wbl-HG-UMs" firstAttribute="leading" secondItem="Ifa-bB-NSR" secondAttribute="trailing" constant="4" id="Pwo-fi-qK5"/>
+                            <constraint firstItem="9Jo-Q1-hsH" firstAttribute="leading" secondItem="h5B-zD-htm" secondAttribute="leading" constant="91" id="VBG-dd-9A3"/>
+                            <constraint firstItem="Wbl-HG-UMs" firstAttribute="top" secondItem="h5B-zD-htm" secondAttribute="top" constant="772" id="VV8-SE-gz7"/>
+                            <constraint firstItem="Ifa-bB-NSR" firstAttribute="top" secondItem="b33-wl-ndy" secondAttribute="bottom" constant="205" id="a64-C5-6gv"/>
+                            <constraint firstItem="ryB-eA-oVa" firstAttribute="top" secondItem="9Jo-Q1-hsH" secondAttribute="bottom" constant="15" id="cfk-Lo-xk4"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="trailing" secondItem="ryB-eA-oVa" secondAttribute="trailing" constant="130" id="dco-It-cLp"/>
+                            <constraint firstItem="cbS-bh-dub" firstAttribute="leading" secondItem="h5B-zD-htm" secondAttribute="leading" constant="118" id="eKJ-Fu-qd0"/>
+                            <constraint firstItem="9Jo-Q1-hsH" firstAttribute="centerX" secondItem="b33-wl-ndy" secondAttribute="centerX" id="hMW-VB-1aj"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="trailing" secondItem="b33-wl-ndy" secondAttribute="trailing" constant="142" id="jar-Zj-i7V"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="trailing" secondItem="Wbl-HG-UMs" secondAttribute="trailing" constant="113" id="kI2-MN-dgt"/>
+                            <constraint firstItem="ryB-eA-oVa" firstAttribute="leading" secondItem="h5B-zD-htm" secondAttribute="leading" constant="130" id="kpI-So-sZF"/>
+                            <constraint firstItem="cbS-bh-dub" firstAttribute="top" secondItem="h5B-zD-htm" secondAttribute="top" constant="269" id="lA5-3I-aen"/>
+                            <constraint firstItem="Ifa-bB-NSR" firstAttribute="leading" secondItem="h5B-zD-htm" secondAttribute="leading" constant="82" id="n7y-9x-1fl"/>
+                            <constraint firstItem="Ifa-bB-NSR" firstAttribute="top" secondItem="h5B-zD-htm" secondAttribute="top" constant="772" id="s50-y5-psL"/>
+                            <constraint firstItem="9Jo-Q1-hsH" firstAttribute="top" secondItem="cbS-bh-dub" secondAttribute="bottom" constant="50" id="sgm-l4-fK1"/>
+                            <constraint firstItem="h5B-zD-htm" firstAttribute="bottom" secondItem="Wbl-HG-UMs" secondAttribute="bottom" constant="30" id="wIy-yn-9yx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2z2-B7-DSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GooglePlus" width="30" height="30"/>
+        <image name="Pinterest" width="30" height="30"/>
+        <image name="Twitter" width="30" height="30"/>
+        <image name="WolloWatchesIcons" width="286" height="222"/>
+        <namedColor name="Accent">
+            <color red="0.9309999942779541" green="0.36000001430511475" blue="0.32899999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Font">
+            <color red="0.33700001239776611" green="0.33700001239776611" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

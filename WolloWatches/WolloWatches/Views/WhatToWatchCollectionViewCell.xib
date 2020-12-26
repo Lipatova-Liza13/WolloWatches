@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MainFont.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WhatToWatchCollectionViewCell" id="ob6-RE-Fov" customClass="WhatToWatchCollectionViewCell" customModule="WolloWatches" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kbD-2Y-nf4">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFh-at-A0s">
+                        <rect key="frame" x="10" y="10" width="130" height="192"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="192" id="DOM-4F-1Pv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-rS-dC5">
+                        <rect key="frame" x="11" y="206" width="129" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="8ab-iF-zCO"/>
+                            <constraint firstAttribute="height" constant="17" id="usE-A8-c2N"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-70-We8">
+                        <rect key="frame" x="11" y="224" width="21" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="PbX-E1-7s1"/>
+                            <constraint firstAttribute="width" constant="21" id="rHe-gN-Y6x"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="8"/>
+                        <color key="textColor" name="MinorFont"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIJ-dp-Y8O">
+                        <rect key="frame" x="31" y="241" width="88" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="5Ff-qd-ALc"/>
+                            <constraint firstAttribute="width" constant="88" id="wUJ-qV-8nP"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="addToCollection"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cih-8G-a37">
+                        <rect key="frame" x="120" y="227" width="25" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="i1f-Zb-ZRe"/>
+                            <constraint firstAttribute="height" constant="11" id="qZu-Km-bEP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-Ll-TrT">
+                        <rect key="frame" x="109" y="229" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="258-Qx-F8c"/>
+                            <constraint firstAttribute="width" constant="9" id="BVK-kb-riv"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="Star"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uIJ-dp-Y8O" firstAttribute="centerX" secondItem="kbD-2Y-nf4" secondAttribute="centerX" id="7hz-a3-55b"/>
+                    <constraint firstItem="3dw-70-We8" firstAttribute="leading" secondItem="kbD-2Y-nf4" secondAttribute="leading" constant="11" id="9CM-GZ-Fdf"/>
+                    <constraint firstAttribute="trailing" secondItem="cFh-at-A0s" secondAttribute="trailing" constant="10" id="Gzm-gV-xo9"/>
+                    <constraint firstAttribute="trailing" secondItem="cih-8G-a37" secondAttribute="trailing" constant="5" id="J9k-iB-oU8"/>
+                    <constraint firstItem="oZi-Ll-TrT" firstAttribute="top" secondItem="cFh-at-A0s" secondAttribute="bottom" constant="27" id="KmK-G6-MZd"/>
+                    <constraint firstAttribute="bottom" secondItem="uIJ-dp-Y8O" secondAttribute="bottom" constant="5" id="Kx4-7T-7SU"/>
+                    <constraint firstItem="cih-8G-a37" firstAttribute="leading" secondItem="oZi-Ll-TrT" secondAttribute="trailing" constant="2" id="LpX-b5-hpq"/>
+                    <constraint firstItem="gJj-rS-dC5" firstAttribute="leading" secondItem="kbD-2Y-nf4" secondAttribute="leading" constant="11" id="Rd2-65-us9"/>
+                    <constraint firstItem="3dw-70-We8" firstAttribute="top" secondItem="gJj-rS-dC5" secondAttribute="bottom" constant="1" id="Wg5-Ed-4Gv"/>
+                    <constraint firstItem="cFh-at-A0s" firstAttribute="leading" secondItem="kbD-2Y-nf4" secondAttribute="leading" constant="10" id="gFC-5c-Ezo"/>
+                    <constraint firstItem="cFh-at-A0s" firstAttribute="top" secondItem="kbD-2Y-nf4" secondAttribute="top" constant="10" id="lFW-ou-RTi"/>
+                    <constraint firstItem="gJj-rS-dC5" firstAttribute="top" secondItem="cFh-at-A0s" secondAttribute="bottom" constant="4" id="nas-mA-a71"/>
+                    <constraint firstItem="cih-8G-a37" firstAttribute="top" secondItem="cFh-at-A0s" secondAttribute="bottom" constant="25" id="znD-9Z-1lr"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="150" height="259"/>
+            <connections>
+                <outlet property="NameLabel" destination="gJj-rS-dC5" id="JbJ-pd-jog"/>
+                <outlet property="ratingLabel" destination="cih-8G-a37" id="OsU-il-9L9"/>
+                <outlet property="recomendationImage" destination="cFh-at-A0s" id="JaV-M9-43t"/>
+            </connections>
+            <point key="canvasLocation" x="-266.66666666666669" y="69.308035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Star" width="9" height="9"/>
+        <image name="addToCollection" width="88" height="13"/>
+        <namedColor name="MinorFont">
+            <color red="0.70999997854232788" green="0.70999997854232788" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

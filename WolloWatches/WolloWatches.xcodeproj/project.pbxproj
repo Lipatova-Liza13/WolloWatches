@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E0659DF25233B8B00054B1A /* StoryboardInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0659DE25233B8B00054B1A /* StoryboardInstance.swift */; };
+		7E0659FE25235D4A00054B1A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0659FD25235D4A00054B1A /* MainTabBarController.swift */; };
+		7E065A0325235E2000054B1A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E065A0225235E2000054B1A /* ProfileViewController.swift */; };
+		7E065A092523621600054B1A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E065A082523621600054B1A /* Profile.storyboard */; };
+		7E065A112523684500054B1A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E065A102523684500054B1A /* AboutViewController.swift */; };
+		7E065A152523699500054B1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E065A142523699500054B1A /* User.swift */; };
+		8308E778253C52570082AD87 /* WhatToWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8308E777253C52570082AD87 /* WhatToWatch.storyboard */; };
+		8308E77F253C56970082AD87 /* WhatToWatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8308E77E253C56970082AD87 /* WhatToWatchTableViewCell.xib */; };
+		8308E782253C5B470082AD87 /* WhatToWatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8308E781253C5B470082AD87 /* WhatToWatchCollectionViewCell.xib */; };
+		8308E785253C5BBD0082AD87 /* WhatToWatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8308E784253C5BBD0082AD87 /* WhatToWatchCollectionViewCell.swift */; };
+		83242CE2253D75500083E7E4 /* WhatToWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83242CE1253D75500083E7E4 /* WhatToWatchViewController.swift */; };
+		832639A125262CBC00326AA9 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832639A025262CBC00326AA9 /* News.storyboard */; };
+		832773CB25039EBD00C5082B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832773CA25039EBD00C5082B /* AppDelegate.swift */; };
+		832773CD25039EBD00C5082B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832773CC25039EBD00C5082B /* SceneDelegate.swift */; };
+		832773D225039EBD00C5082B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832773D025039EBD00C5082B /* Main.storyboard */; };
+		832773D425039EC100C5082B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832773D325039EC100C5082B /* Assets.xcassets */; };
+		832773D725039EC100C5082B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832773D525039EC100C5082B /* LaunchScreen.storyboard */; };
+		832773E225039EC200C5082B /* WolloWatchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832773E125039EC200C5082B /* WolloWatchesTests.swift */; };
+		832773ED2503D43C00C5082B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832773EC2503D43C00C5082B /* Auth.storyboard */; };
+		832773F52505028400C5082B /* FacebookLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832773F42505028400C5082B /* FacebookLogIn.storyboard */; };
+		832773FB25057F5B00C5082B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832773FA25057F5A00C5082B /* LogInViewController.swift */; };
+		832773FD25057F9800C5082B /* LogUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832773FC25057F9800C5082B /* LogUpViewController.swift */; };
+		832773FF25057FCB00C5082B /* FacebookLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832773FE25057FCB00C5082B /* FacebookLogInViewController.swift */; };
+		8327CEAE25309AF7000357A6 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327CEAD25309AF7000357A6 /* NewsList.swift */; };
+		8347F1D2252C9EBA00286372 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347F1D1252C9EBA00286372 /* Provider.swift */; };
+		835EB0AB25110C7100FDE0C2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835EB0AA25110C7100FDE0C2 /* Validator.swift */; };
+		836E9F9A2524E322000E514A /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 836E9F992524E322000E514A /* NewsTableViewCell.xib */; };
+		836E9F9F2524F0FF000E514A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E9F9E2524F0FF000E514A /* NewsTableViewCell.swift */; };
+		836E9FA3252508A3000E514A /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E9FA2252508A3000E514A /* News.swift */; };
+		836E9FA8252514FD000E514A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836E9FA7252514FD000E514A /* NewsViewController.swift */; };
+		83AE86EF2535C81400486012 /* Pods_WolloWatches.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F08E0E4ACA27356B04361 /* Pods_WolloWatches.framework */; };
+		83AE86F02535C81400486012 /* Pods_WolloWatches.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 930F08E0E4ACA27356B04361 /* Pods_WolloWatches.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83B1E4D9251926770034E17C /* MainFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83B1E4D8251926770034E17C /* MainFont.ttf */; };
+		83D0C014253CEA1D00E9917D /* WhatToWatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0C013253CEA1D00E9917D /* WhatToWatchTableViewCell.swift */; };
+		CDFAF38237996E1BFA705B65 /* Pods_WolloWatchesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349E2963EB84F84971B251D8 /* Pods_WolloWatchesTests.framework */; };
+		FA49247F255D7FEB00705010 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49247E255D7FEB00705010 /* Video.swift */; };
+		FA87696C254AE6260025A347 /* FavoriteVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA87696B254AE6260025A347 /* FavoriteVideoTableViewCell.xib */; };
+		FA87696F254AE6550025A347 /* FavoriteVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87696E254AE6550025A347 /* FavoriteVideoTableViewCell.swift */; };
+		FA876972254AE6800025A347 /* FavoriteVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA876971254AE6800025A347 /* FavoriteVideoCollectionViewCell.xib */; };
+		FA876975254AE6BB0025A347 /* FavoriteVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA876974254AE6BB0025A347 /* FavoriteVideoCollectionViewCell.swift */; };
+		FA876978254AE6FA0025A347 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA876977254AE6FA0025A347 /* Favorites.swift */; };
+		FA87697B254AE7210025A347 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87697A254AE7210025A347 /* VideoList.swift */; };
+		FA9EF4E2255034C5008516DD /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EF4E1255034C5008516DD /* VideoViewController.swift */; };
+		FAC22FFA25559F3A00114312 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC22FF925559F3A00114312 /* Popular.swift */; };
+		FAC22FFD25559F5200114312 /* PopularList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC22FFC25559F5200114312 /* PopularList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		832773DE25039EC200C5082B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832773BF25039EBD00C5082B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832773C625039EBD00C5082B;
+			remoteInfo = WolloWatches;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83AE86F12535C81400486012 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83AE86F02535C81400486012 /* Pods_WolloWatches.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		349E2963EB84F84971B251D8 /* Pods_WolloWatchesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolloWatchesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55ABA5396D1B78207C5F53DC /* Pods-WolloWatches.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolloWatches.release.xcconfig"; path = "Target Support Files/Pods-WolloWatches/Pods-WolloWatches.release.xcconfig"; sourceTree = "<group>"; };
+		6112E77D1FB9C4F25ECC873A /* Pods-WolloWatches.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolloWatches.debug.xcconfig"; path = "Target Support Files/Pods-WolloWatches/Pods-WolloWatches.debug.xcconfig"; sourceTree = "<group>"; };
+		74F1740C52B163A2ACD11555 /* Pods-WolloWatchesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolloWatchesTests.release.xcconfig"; path = "Target Support Files/Pods-WolloWatchesTests/Pods-WolloWatchesTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E0659DE25233B8B00054B1A /* StoryboardInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstance.swift; sourceTree = "<group>"; };
+		7E0659FD25235D4A00054B1A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		7E065A0225235E2000054B1A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7E065A082523621600054B1A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		7E065A102523684500054B1A /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7E065A142523699500054B1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
+		8308E777253C52570082AD87 /* WhatToWatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WhatToWatch.storyboard; sourceTree = "<group>"; };
+		8308E77E253C56970082AD87 /* WhatToWatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatToWatchTableViewCell.xib; sourceTree = "<group>"; };
+		8308E781253C5B470082AD87 /* WhatToWatchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WhatToWatchCollectionViewCell.xib; sourceTree = "<group>"; };
+		8308E784253C5BBD0082AD87 /* WhatToWatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWatchCollectionViewCell.swift; sourceTree = "<group>"; };
+		83242CE1253D75500083E7E4 /* WhatToWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWatchViewController.swift; sourceTree = "<group>"; };
+		832639A025262CBC00326AA9 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		832773C725039EBD00C5082B /* WolloWatches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolloWatches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		832773CA25039EBD00C5082B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		832773CC25039EBD00C5082B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		832773D125039EBD00C5082B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		832773D325039EC100C5082B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		832773D625039EC100C5082B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		832773D825039EC100C5082B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832773DD25039EC200C5082B /* WolloWatchesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolloWatchesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		832773E125039EC200C5082B /* WolloWatchesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolloWatchesTests.swift; sourceTree = "<group>"; };
+		832773E325039EC200C5082B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = WolloWatchesTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		832773EC2503D43C00C5082B /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		832773F42505028400C5082B /* FacebookLogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FacebookLogIn.storyboard; sourceTree = "<group>"; };
+		832773FA25057F5A00C5082B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		832773FC25057F9800C5082B /* LogUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUpViewController.swift; sourceTree = "<group>"; };
+		832773FE25057FCB00C5082B /* FacebookLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLogInViewController.swift; sourceTree = "<group>"; };
+		8327CEAD25309AF7000357A6 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsList.swift; path = WolloWatches/ViewControllers/News/NewsList.swift; sourceTree = SOURCE_ROOT; };
+		8347F1D1252C9EBA00286372 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		835EB0AA25110C7100FDE0C2 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		836E9F992524E322000E514A /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = WolloWatches/ViewControllers/NewsTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		836E9F9E2524F0FF000E514A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		836E9FA2252508A3000E514A /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = News.swift; path = WolloWatches/Views/News.swift; sourceTree = SOURCE_ROOT; };
+		836E9FA7252514FD000E514A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		83B1E4D8251926770034E17C /* MainFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainFont.ttf; sourceTree = "<group>"; };
+		83D0C013253CEA1D00E9917D /* WhatToWatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWatchTableViewCell.swift; sourceTree = "<group>"; };
+		930F08E0E4ACA27356B04361 /* Pods_WolloWatches.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolloWatches.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F46ABF4D58EA3EB6F7E170 /* Pods-WolloWatchesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolloWatchesTests.debug.xcconfig"; path = "Target Support Files/Pods-WolloWatchesTests/Pods-WolloWatchesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA49247E255D7FEB00705010 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		FA87696B254AE6260025A347 /* FavoriteVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteVideoTableViewCell.xib; sourceTree = "<group>"; };
+		FA87696E254AE6550025A347 /* FavoriteVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoTableViewCell.swift; sourceTree = "<group>"; };
+		FA876971254AE6800025A347 /* FavoriteVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteVideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA876974254AE6BB0025A347 /* FavoriteVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA876977254AE6FA0025A347 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Favorites.swift; path = WolloWatches/Views/Favorites.swift; sourceTree = SOURCE_ROOT; };
+		FA87697A254AE7210025A347 /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoList.swift; path = WolloWatches/Views/VideoList.swift; sourceTree = SOURCE_ROOT; };
+		FA9EF4E1255034C5008516DD /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FAC22FF925559F3A00114312 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		FAC22FFC25559F5200114312 /* PopularList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		832773C425039EBD00C5082B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AE86EF2535C81400486012 /* Pods_WolloWatches.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832773DA25039EC200C5082B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFAF38237996E1BFA705B65 /* Pods_WolloWatchesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E0659DD25233B6C00054B1A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				832773D025039EBD00C5082B /* Main.storyboard */,
+				832639A025262CBC00326AA9 /* News.storyboard */,
+				8308E777253C52570082AD87 /* WhatToWatch.storyboard */,
+				7E065A082523621600054B1A /* Profile.storyboard */,
+				832773F42505028400C5082B /* FacebookLogIn.storyboard */,
+				832773EC2503D43C00C5082B /* Auth.storyboard */,
+				832773D525039EC100C5082B /* LaunchScreen.storyboard */,
+				7E0659DE25233B8B00054B1A /* StoryboardInstance.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7E0659EB2523402100054B1A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				832773CC25039EBD00C5082B /* SceneDelegate.swift */,
+				832773CA25039EBD00C5082B /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7E0659EC2523403E00054B1A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7E0659DD25233B6C00054B1A /* Storyboards */,
+				832773D325039EC100C5082B /* Assets.xcassets */,
+				83B1E4D8251926770034E17C /* MainFont.ttf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7E0659F12523410C00054B1A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA492456255D48EB00705010 /* Video */,
+				83242CE4253D75610083E7E4 /* WhatToWatch */,
+				836E9FA625251474000E514A /* News */,
+				7E065A0125235E0300054B1A /* Profile */,
+				7E0659FC25235D0E00054B1A /* TabBar */,
+				7E065A18252369D000054B1A /* Auth */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7E0659FA25235C1800054B1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				836E9F992524E322000E514A /* NewsTableViewCell.xib */,
+				836E9F9E2524F0FF000E514A /* NewsTableViewCell.swift */,
+				8308E77E253C56970082AD87 /* WhatToWatchTableViewCell.xib */,
+				83D0C013253CEA1D00E9917D /* WhatToWatchTableViewCell.swift */,
+				8308E781253C5B470082AD87 /* WhatToWatchCollectionViewCell.xib */,
+				8308E784253C5BBD0082AD87 /* WhatToWatchCollectionViewCell.swift */,
+				FA87696B254AE6260025A347 /* FavoriteVideoTableViewCell.xib */,
+				FA87696E254AE6550025A347 /* FavoriteVideoTableViewCell.swift */,
+				FA876971254AE6800025A347 /* FavoriteVideoCollectionViewCell.xib */,
+				FA876974254AE6BB0025A347 /* FavoriteVideoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E0659FB25235C2200054B1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E065A142523699500054B1A /* User.swift */,
+				836E9FA2252508A3000E514A /* News.swift */,
+				8327CEAD25309AF7000357A6 /* NewsList.swift */,
+				FA876977254AE6FA0025A347 /* Favorites.swift */,
+				FA87697A254AE7210025A347 /* VideoList.swift */,
+				FAC22FF925559F3A00114312 /* Popular.swift */,
+				FAC22FFC25559F5200114312 /* PopularList.swift */,
+				FA49247E255D7FEB00705010 /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E0659FC25235D0E00054B1A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7E0659FD25235D4A00054B1A /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7E065A0125235E0300054B1A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7E065A0225235E2000054B1A /* ProfileViewController.swift */,
+				7E065A102523684500054B1A /* AboutViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7E065A18252369D000054B1A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				832773FE25057FCB00C5082B /* FacebookLogInViewController.swift */,
+				832773FA25057F5A00C5082B /* LogInViewController.swift */,
+				832773FC25057F9800C5082B /* LogUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		83242CE4253D75610083E7E4 /* WhatToWatch */ = {
+			isa = PBXGroup;
+			children = (
+				83242CE1253D75500083E7E4 /* WhatToWatchViewController.swift */,
+			);
+			path = WhatToWatch;
+			sourceTree = "<group>";
+		};
+		832773BE25039EBD00C5082B = {
+			isa = PBXGroup;
+			children = (
+				832773C925039EBD00C5082B /* WolloWatches */,
+				832773E025039EC200C5082B /* WolloWatchesTests */,
+				832773C825039EBD00C5082B /* Products */,
+				E2DC7F37DA87A386899F1124 /* Pods */,
+				A67351340F0894B4938BD718 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		832773C825039EBD00C5082B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832773C725039EBD00C5082B /* WolloWatches.app */,
+				832773DD25039EC200C5082B /* WolloWatchesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832773C925039EBD00C5082B /* WolloWatches */ = {
+			isa = PBXGroup;
+			children = (
+				FACE561B2540CD7B00E3BE06 /* Provider */,
+				7E0659FB25235C2200054B1A /* Models */,
+				7E0659FA25235C1800054B1A /* Views */,
+				7E0659F12523410C00054B1A /* ViewControllers */,
+				7E0659EC2523403E00054B1A /* Assets */,
+				7E0659EB2523402100054B1A /* App */,
+				832773D825039EC100C5082B /* Info.plist */,
+				835EB0AA25110C7100FDE0C2 /* Validator.swift */,
+			);
+			path = WolloWatches;
+			sourceTree = "<group>";
+		};
+		832773E025039EC200C5082B /* WolloWatchesTests */ = {
+			isa = PBXGroup;
+			children = (
+				832773E325039EC200C5082B /* Info.plist */,
+				832773E125039EC200C5082B /* WolloWatchesTests.swift */,
+			);
+			path = WolloWatchesTests;
+			sourceTree = "<group>";
+		};
+		836E9FA625251474000E514A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				836E9FA7252514FD000E514A /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A67351340F0894B4938BD718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				930F08E0E4ACA27356B04361 /* Pods_WolloWatches.framework */,
+				349E2963EB84F84971B251D8 /* Pods_WolloWatchesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2DC7F37DA87A386899F1124 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6112E77D1FB9C4F25ECC873A /* Pods-WolloWatches.debug.xcconfig */,
+				55ABA5396D1B78207C5F53DC /* Pods-WolloWatches.release.xcconfig */,
+				E3F46ABF4D58EA3EB6F7E170 /* Pods-WolloWatchesTests.debug.xcconfig */,
+				74F1740C52B163A2ACD11555 /* Pods-WolloWatchesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA492456255D48EB00705010 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				FA9EF4E1255034C5008516DD /* VideoViewController.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		FACE561B2540CD7B00E3BE06 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8347F1D1252C9EBA00286372 /* Provider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		832773C625039EBD00C5082B /* WolloWatches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832773E625039EC200C5082B /* Build configuration list for PBXNativeTarget "WolloWatches" */;
+			buildPhases = (
+				6D69F9DA3CA596BCE18F0F21 /* [CP] Check Pods Manifest.lock */,
+				832773C325039EBD00C5082B /* Sources */,
+				832773C425039EBD00C5082B /* Frameworks */,
+				832773C525039EBD00C5082B /* Resources */,
+				83AE86F12535C81400486012 /* Embed Frameworks */,
+				C3C26EE3C6A58ABCABC60A70 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WolloWatches;
+			productName = WolloWatches;
+			productReference = 832773C725039EBD00C5082B /* WolloWatches.app */;
+			productType = "com.apple.product-type.application";
+		};
+		832773DC25039EC200C5082B /* WolloWatchesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832773E925039EC200C5082B /* Build configuration list for PBXNativeTarget "WolloWatchesTests" */;
+			buildPhases = (
+				25E1F557C5BBC22C79920E3A /* [CP] Check Pods Manifest.lock */,
+				832773D925039EC200C5082B /* Sources */,
+				832773DA25039EC200C5082B /* Frameworks */,
+				832773DB25039EC200C5082B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832773DF25039EC200C5082B /* PBXTargetDependency */,
+			);
+			name = WolloWatchesTests;
+			productName = WolloWatchesTests;
+			productReference = 832773DD25039EC200C5082B /* WolloWatchesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		832773BF25039EBD00C5082B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Liza Lipatova and Maxim Semeniy";
+				TargetAttributes = {
+					832773C625039EBD00C5082B = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					832773DC25039EC200C5082B = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 832773C625039EBD00C5082B;
+					};
+				};
+			};
+			buildConfigurationList = 832773C225039EBD00C5082B /* Build configuration list for PBXProject "WolloWatches" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 832773BE25039EBD00C5082B;
+			productRefGroup = 832773C825039EBD00C5082B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				832773C625039EBD00C5082B /* WolloWatches */,
+				832773DC25039EC200C5082B /* WolloWatchesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		832773C525039EBD00C5082B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832773F52505028400C5082B /* FacebookLogIn.storyboard in Resources */,
+				8308E782253C5B470082AD87 /* WhatToWatchCollectionViewCell.xib in Resources */,
+				832773D725039EC100C5082B /* LaunchScreen.storyboard in Resources */,
+				FA87696C254AE6260025A347 /* FavoriteVideoTableViewCell.xib in Resources */,
+				FA876972254AE6800025A347 /* FavoriteVideoCollectionViewCell.xib in Resources */,
+				83B1E4D9251926770034E17C /* MainFont.ttf in Resources */,
+				8308E77F253C56970082AD87 /* WhatToWatchTableViewCell.xib in Resources */,
+				832773D425039EC100C5082B /* Assets.xcassets in Resources */,
+				832639A125262CBC00326AA9 /* News.storyboard in Resources */,
+				832773D225039EBD00C5082B /* Main.storyboard in Resources */,
+				7E065A092523621600054B1A /* Profile.storyboard in Resources */,
+				8308E778253C52570082AD87 /* WhatToWatch.storyboard in Resources */,
+				836E9F9A2524E322000E514A /* NewsTableViewCell.xib in Resources */,
+				832773ED2503D43C00C5082B /* Auth.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832773DB25039EC200C5082B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25E1F557C5BBC22C79920E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WolloWatchesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D69F9DA3CA596BCE18F0F21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WolloWatches-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C26EE3C6A58ABCABC60A70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WolloWatches/Pods-WolloWatches-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WolloWatches/Pods-WolloWatches-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WolloWatches/Pods-WolloWatches-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		832773C325039EBD00C5082B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832773FB25057F5B00C5082B /* LogInViewController.swift in Sources */,
+				7E0659DF25233B8B00054B1A /* StoryboardInstance.swift in Sources */,
+				83242CE2253D75500083E7E4 /* WhatToWatchViewController.swift in Sources */,
+				83D0C014253CEA1D00E9917D /* WhatToWatchTableViewCell.swift in Sources */,
+				FA49247F255D7FEB00705010 /* Video.swift in Sources */,
+				8327CEAE25309AF7000357A6 /* NewsList.swift in Sources */,
+				8308E785253C5BBD0082AD87 /* WhatToWatchCollectionViewCell.swift in Sources */,
+				836E9F9F2524F0FF000E514A /* NewsTableViewCell.swift in Sources */,
+				FA9EF4E2255034C5008516DD /* VideoViewController.swift in Sources */,
+				7E0659FE25235D4A00054B1A /* MainTabBarController.swift in Sources */,
+				FA876978254AE6FA0025A347 /* Favorites.swift in Sources */,
+				832773FD25057F9800C5082B /* LogUpViewController.swift in Sources */,
+				832773FF25057FCB00C5082B /* FacebookLogInViewController.swift in Sources */,
+				835EB0AB25110C7100FDE0C2 /* Validator.swift in Sources */,
+				7E065A0325235E2000054B1A /* ProfileViewController.swift in Sources */,
+				832773CB25039EBD00C5082B /* AppDelegate.swift in Sources */,
+				7E065A112523684500054B1A /* AboutViewController.swift in Sources */,
+				FAC22FFA25559F3A00114312 /* Popular.swift in Sources */,
+				832773CD25039EBD00C5082B /* SceneDelegate.swift in Sources */,
+				836E9FA3252508A3000E514A /* News.swift in Sources */,
+				836E9FA8252514FD000E514A /* NewsViewController.swift in Sources */,
+				FAC22FFD25559F5200114312 /* PopularList.swift in Sources */,
+				FA876975254AE6BB0025A347 /* FavoriteVideoCollectionViewCell.swift in Sources */,
+				FA87696F254AE6550025A347 /* FavoriteVideoTableViewCell.swift in Sources */,
+				FA87697B254AE7210025A347 /* VideoList.swift in Sources */,
+				8347F1D2252C9EBA00286372 /* Provider.swift in Sources */,
+				7E065A152523699500054B1A /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832773D925039EC200C5082B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832773E225039EC200C5082B /* WolloWatchesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832773DF25039EC200C5082B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832773C625039EBD00C5082B /* WolloWatches */;
+			targetProxy = 832773DE25039EC200C5082B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		832773D025039EBD00C5082B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832773D125039EBD00C5082B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		832773D525039EC100C5082B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832773D625039EC100C5082B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		832773E425039EC200C5082B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		832773E525039EC200C5082B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		832773E725039EC200C5082B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6112E77D1FB9C4F25ECC873A /* Pods-WolloWatches.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36LCQ3K54Z;
+				INFOPLIST_FILE = WolloWatches/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WolloWatches";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		832773E825039EC200C5082B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55ABA5396D1B78207C5F53DC /* Pods-WolloWatches.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36LCQ3K54Z;
+				INFOPLIST_FILE = WolloWatches/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WolloWatches";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		832773EA25039EC200C5082B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3F46ABF4D58EA3EB6F7E170 /* Pods-WolloWatchesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WolloWatchesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WolloWatchesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WolloWatches.app/WolloWatches";
+			};
+			name = Debug;
+		};
+		832773EB25039EC200C5082B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F1740C52B163A2ACD11555 /* Pods-WolloWatchesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WolloWatchesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.WolloWatchesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WolloWatches.app/WolloWatches";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		832773C225039EBD00C5082B /* Build configuration list for PBXProject "WolloWatches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832773E425039EC200C5082B /* Debug */,
+				832773E525039EC200C5082B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832773E625039EC200C5082B /* Build configuration list for PBXNativeTarget "WolloWatches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832773E725039EC200C5082B /* Debug */,
+				832773E825039EC200C5082B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832773E925039EC200C5082B /* Build configuration list for PBXNativeTarget "WolloWatchesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832773EA25039EC200C5082B /* Debug */,
+				832773EB25039EC200C5082B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 832773BF25039EBD00C5082B /* Project object */;
+}
